@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  showtime_id: 1
+  seat_number: 1
+  user_name: MyString
+
+two:
+  showtime_id: 1
+  seat_number: 1
+  user_name: MyString
