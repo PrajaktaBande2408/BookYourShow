@@ -1,11 +1,14 @@
-# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
 one:
-  showtime_id: 1
+  showtime: one
   seat_number: 1
-  user_name: MyString
+  user_name: "User 1"
 
 two:
-  showtime_id: 1
-  seat_number: 1
-  user_name: MyString
+  showtime: one
+  seat_number: 2
+  user_name: "User 2"
+
+three:
+  showtime: one
+  seat_number: 3
+  user_name: "User 3"
