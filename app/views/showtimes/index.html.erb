@@ -1,0 +1,13 @@
+<h1>All Showtimes</h1>
+
+<% @showtimes.each do |showtime| %>
+  <div>
+    <h2><%= showtime.movie.title %></h2>
+    <p>Genre: <%= showtime.movie.genre %></p>
+    <p>Show starts at: <%= showtime.start_time.to_datetime.strftime("%A, %d %B %Y %H:%M") %></p>
+    <p>Show ends at: <%= showtime.end_time.to_datetime.strftime("%A, %d %B %Y %H:%M") %></p>
+    <p>Available Seats: <%= showtime.available_seats %></p>
+    <%= link_to "Book Ticket", showtime_path(showtime), class: 'btn btn-primary' %>
+  </div>
+  <hr>
+<% end %>

@@ -1,0 +1,11 @@
+one:
+  title: "movie1"
+  genre: "drama"
+
+two:
+  title: "movie2"
+  genre: "Thriller"
+
+three:
+  title: "movie3"
+  genre: "Drama"

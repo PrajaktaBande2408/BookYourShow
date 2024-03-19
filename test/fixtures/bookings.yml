@@ -1,0 +1,14 @@
+one:
+  showtime: one
+  seat_number: 1
+  user_name: "User 1"
+
+two:
+  showtime: one
+  seat_number: 2
+  user_name: "User 2"
+
+three:
+  showtime: one
+  seat_number: 3
+  user_name: "User 3"
