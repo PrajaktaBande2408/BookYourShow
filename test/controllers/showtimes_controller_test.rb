@@ -1,5 +1,6 @@
 require 'test_helper'
 
+
 class ShowtimesControllerTest < ActionDispatch::IntegrationTest
   setup do
     @showtime = showtimes(:one)

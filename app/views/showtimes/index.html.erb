@@ -7,7 +7,7 @@
     <p>Show starts at: <%= showtime.start_time.to_datetime.strftime("%A, %d %B %Y %H:%M") %></p>
     <p>Show ends at: <%= showtime.end_time.to_datetime.strftime("%A, %d %B %Y %H:%M") %></p>
     <p>Available Seats: <%= showtime.available_seats %></p>
-    <%= link_to "Book Ticket", showtime_path(showtime), class: 'btn btn-primary' %>
+    <%= link_to "Book Ticket", showtime_path(showtime) %>
   </div>
   <hr>
 <% end %>

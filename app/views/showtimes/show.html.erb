@@ -8,9 +8,9 @@
   <%= form_with(url: book_ticket_showtime_path(@showtime), method: :post) do |f| %>
     <div class="form-group">
       <%= f.label :user_name %>
-      <%= f.text_field :user_name, class: 'form-control' %>
+      <%= f.text_field :user_name %>
     </div>
-    <%= f.submit "Book Ticket", class: 'btn btn-primary' %>
+    <%= f.submit "Book Ticket" %>
   <% end %>
 <% else %>
   <p>Sorry, no seats available for this show.</p>
@@ -23,7 +23,7 @@
       <li>
         Seat Number: <%= booking.seat_number %>
         | User Name: <%= booking.user_name %>
-        | <%= link_to "Cancel", cancel_ticket_showtime_path(@showtime, booking), method: :delete, data: { confirm: "Are you sure you want to cancel this ticket?" }, class: 'btn btn-danger btn-sm' %>
+        | <%= link_to "Cancel", cancel_ticket_showtime_path(@showtime, booking), method: :delete, data: { confirm: "Are you sure you want to cancel this ticket?" } %>
       </li>
     <% end %>
   </ul>
